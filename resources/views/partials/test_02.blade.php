@@ -21,19 +21,47 @@
 		<div>faccio cose</div> 
 	@endif
 
+	@for ($i=0; $i<1; $i++)
+		<div>questo ciclo è inutile, ma almeno funziona</div> 
+	@endfor
+
+	{{-- ah ma adesso il commento è così! --}}
+
+	@php
+		echo $i.': lo scope lascia a desiderare...<br>';	
+		echo '(funziona anche il nuovo tag)<br><br>';	
+	@endphp
+
+	{{-- ma in un ciclo while come incremento la variabile? --}}
+	{{-- @while (true)
+		<div>tra chiocciole e dollari, c'è un grande caos sotto il cielo: la situazione è eccellente!</div>
+	@endwhile --}}
+
+	@for ($i = 0; $i < 10; $i++)
+		<div>tra chiocciole e dollari, c'è un grande caos sotto il cielo: la situazione è eccellente!</div>
+	@endfor
+
 	@php 
 		$gente = ['ciccio','michele','gennaro'];
-		echo '(funziona anche il nuovo tag)';	
 	@endphp
 
 	<ol>
 		@foreach ($gente as $tizio)
 			<li>
 				{{$tizio}}
-				{{-- @if ($loop->last) (er mejo) --}}
+				@if ($loop->last) 
+					(er mejo)
+				@endif
 			</li>
 		@endforeach
 	</ol>
+
+	{{-- 
+		php artisan serve 		>>> ok
+		php artisan list 		>>> ok
+		php artisan route:list 	>>> ok
+		poi?
+	--}}
 
 </body>
 </html>

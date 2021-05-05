@@ -87,8 +87,8 @@
                 <div>
 					<div>CIAO!</div>
 					<div class="links">
-						<a href="partials/test_02">link a una sotto-pagina (chiamala <em>view</em>!)</a>
-						<div>href: non indico il file, ma l'albaratura delle views</div>
+						<a href="partials/test_02">link a una sotto-pagina, ok ma chiamala <em>view</em>!</a>
+						<div>(href: non indico il nomefile esatto, ma l'albaratura delle views)</div>
 					</div>
                 </div>
             </div>
