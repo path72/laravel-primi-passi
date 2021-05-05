@@ -57,11 +57,16 @@
 	</ol>
 
 	{{-- 
+
 		php artisan serve 		>>> ok
 		php artisan list 		>>> ok
 		php artisan route:list 	>>> ok
+
 		poi?
+
 	--}}
 
 </body>
 </html>
+
+{{-- qui com'è il commento? questa pagina è controllata da Mr.Blade... --}}
